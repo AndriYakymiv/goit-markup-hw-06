@@ -872,6 +872,11 @@ ul {
   height: 18px;
 }
 
+.modal-close-icon:hover,
+.modal-close-icon:focus {
+  fill: var(--accent-color);
+}
+
 .form {
   display: flex;
   flex-direction: column;
@@ -914,18 +919,29 @@ ul {
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 42px;
+  height: 40px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   box-sizing: border-box;
   border-radius: 4px;
-  cursor: pointer;
   font-size: 16px;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.form-input-comment {
+  width: 100%;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  resize: none;
+  outline: none;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
 .form-label svg {
   position: absolute;
-  bottom: 13.5px;
+  top: 50%;
   left: 12px;
   fill: var(--secondary-title-color);
 }
@@ -967,7 +983,12 @@ ul {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
-  color: var(--auxiliary-text-color);
+  color: var(--main-text-color);
+}
+
+.checkbox-link {
+  color: var(--accent-color);
+  margin-left: 5px;
 }
 .form-button {
   display: flex;
@@ -1003,7 +1024,6 @@ ul {
 .modal textarea:focus {
   border-color: var(--accent-color);
   outline: none;
-  cursor: pointer;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
